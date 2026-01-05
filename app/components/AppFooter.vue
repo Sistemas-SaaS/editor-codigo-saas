@@ -1,34 +1,34 @@
 <script setup lang="ts">
 const columns = [{
-  label: 'Resources',
+  label: 'Recursos',
   children: [{
-    label: 'Help center'
+    label: 'Central de Ajuda'
   }, {
-    label: 'Docs'
+    label: 'Documentação'
   }, {
-    label: 'Roadmap'
+    label: 'Roteiro'
   }, {
-    label: 'Changelog'
+    label: 'Registro de Mudanças'
   }]
 }, {
-  label: 'Features',
+  label: 'Funcionalidades',
   children: [{
-    label: 'Affiliates'
+    label: 'Afiliados'
   }, {
     label: 'Portal'
   }, {
-    label: 'Jobs'
+    label: 'Vagas'
   }, {
-    label: 'Sponsors'
+    label: 'Patrocinadores'
   }]
 }, {
-  label: 'Company',
+  label: 'Empresa',
   children: [{
-    label: 'About'
+    label: 'Sobre'
   }, {
-    label: 'Pricing'
+    label: 'Preços'
   }, {
-    label: 'Careers'
+    label: 'Carreiras'
   }, {
     label: 'Blog'
   }]
@@ -43,8 +43,8 @@ function onSubmit() {
   loading.value = true
 
   toast.add({
-    title: 'Subscribed!',
-    description: 'You\'ve been subscribed to our newsletter.'
+    title: 'Inscrito!',
+    description: 'Você foi inscrito em nossa newsletter.'
   })
 }
 </script>
@@ -63,20 +63,20 @@ function onSubmit() {
             <form @submit.prevent="onSubmit">
               <UFormField
                 name="email"
-                label="Subscribe to our newsletter"
+                label="Inscreva-se em nossa newsletter"
                 size="lg"
               >
                 <UInput
                   v-model="email"
                   type="email"
                   class="w-full"
-                  placeholder="Enter your email"
+                  placeholder="Digite seu e-mail"
                 >
                   <template #trailing>
                     <UButton
                       type="submit"
                       size="xs"
-                      label="Subscribe"
+                      label="Inscrever"
                     />
                   </template>
                 </UInput>
@@ -89,7 +89,7 @@ function onSubmit() {
 
     <template #left>
       <p class="text-sm text-muted">
-        Built with Nuxt UI • © {{ new Date().getFullYear() }}
+        Construído com Nuxt UI • © {{ new Date().getFullYear() }}
       </p>
     </template>
 
@@ -98,7 +98,7 @@ function onSubmit() {
         to="https://go.nuxt.com/discord"
         target="_blank"
         icon="i-simple-icons-discord"
-        aria-label="Nuxt on Discord"
+        aria-label="Nuxt no Discord"
         color="neutral"
         variant="ghost"
       />
@@ -106,7 +106,7 @@ function onSubmit() {
         to="https://go.nuxt.com/x"
         target="_blank"
         icon="i-simple-icons-x"
-        aria-label="Nuxt on X"
+        aria-label="Nuxt no X"
         color="neutral"
         variant="ghost"
       />
@@ -114,7 +114,7 @@ function onSubmit() {
         to="https://github.com/nuxt-ui-templates/landing"
         target="_blank"
         icon="i-simple-icons-github"
-        aria-label="Nuxt UI on GitHub"
+        aria-label="Nuxt UI no GitHub"
         color="neutral"
         variant="ghost"
       />

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { data: page } = await useAsyncData('index', () => queryCollection('content').first())
 if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+  throw createError({ statusCode: 404, statusMessage: 'Página não encontrada', fatal: true })
 }
 
 useSeoMeta({
